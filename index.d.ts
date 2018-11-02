@@ -1,4 +1,4 @@
-import * as Prefixer from 'inline-style-prefixer';
+import { Prefix } from "inline-style-prefixer"
 import * as React from 'react';
 
 export type Size = string | number;
@@ -19,7 +19,7 @@ export interface Props {
   onChange?: (newSize: number) => void;
   onResizerClick?: (event: MouseEvent) => void;
   onResizerDoubleClick?: (event: MouseEvent) => void;
-  prefixer?: Prefixer;
+  prefixer?: Prefix;
   style?: React.CSSProperties;
   resizerStyle?: React.CSSProperties;
   paneStyle?: React.CSSProperties;
